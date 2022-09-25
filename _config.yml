@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "0sik"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "백엔드를 하고싶은사람"
-  location         : "Somewhere"
+  bio              : "공부저장소"
+  location         : "Korea"
   email            :
   links:
     - label: "Email"
