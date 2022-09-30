@@ -1,0 +1,125 @@
+📘스프링부트
+
+
+# 프로젝트 생성
+스프링 부트 스타터([https://start.spring.io/](https://start.spring.io/))
+Maven Project(자바용 프로젝트 관리 도구) Gradle Project(빌드 자동화 시스템)
+요즘은 Gradle을 많이 씀
+> Dependencies(라이브러리 설정)
+1 . Spring web (RESTful api나 Spring MVC, Apache Torncat을 쓸수있음)
+2 . Thymeleaf(JSP(요즘안씀)를 쓸게 아니여서 Thymeleaf를 씀 , modern server-side java template(템플릿)) (https://www.thymeleaf.org/)
+3 . Spring Data JPA( Java persistence Api)
+4 . H2 Database(데이터베이스)
+5 . Lombok(지루하게 반복하는 코드를 줄여줌)(Lombok을 쓰려면 plugins에서 설치후 Build,Execution,Deployment->Compiler->Annotation Processors에서 Enable annotation processing활성화
+
+generate로 폴더 다운받고 자기가 원하는 위치에 압출풀기,IDEA로 파일열기
+
+# View 환경 설정
+```
+@Controller
+public class HeoolController {
+    @GetMapping("hello")
+    public String hello(Model model){
+        model.addAttribute("data","hello");
+        return "hello";
+    }
+}
+```
+@GetMapping("~~") =>  ~~이라는 url주소로 오면 밑 컨트롤러를 호출
+Model model => spring ui에 있는 model에 데이터를 실어서 view로 넘길수 있다.
+model.addAtrribute("data","hello"); => data라는 키에 값의 hello라는 값을 넘긴다
+return "hello" => hello.html이 자동으로 붙고 hello.html이 자동으로 호출된다.
+hello.html 생성하는방법(resources - templates에 생성)
+
+> //build.gradle에
+implementation 'org.springframework.boot:spring-boot-devtools'
+추가하면파일을 컴파일만 해주면 서버 재시작 없이
+View 파일 변경이 가능하다.
+인텔리J 컴파일 방법: 메뉴 build Recompile
+
+# H2-DB 설치 실행
+https://www.h2database.com 다운로드 및 설치
+
+데이터베이스 파일 생성 방법
+h2 console 실행후
+JDBC URL에다가 jdbc:h2:~/jpashop (최소 한번)
+~/jpashop.mv.db 파일 생성 확인
+이후 부터는 jdbc:h2:tcp://localhost/~/jpashop 이렇게 접속
+# jpa와 db 설정
+main/resources/application.yml
+```
+yml 띄어쓰기 주의
+spring: #띄어쓰기 없음
+ datasource: #띄어쓰기 2칸
+ url: jdbc:h2:tcp://localhost/~/jpashop #4칸
+ username: sa
+ password:
+ driver-class-name: org.h2.Driver
+ jpa: #띄어쓰기 2칸
+ hibernate: #띄어쓰기 4칸
+ ddl-auto: create #띄어쓰기 6칸
+ properties: #띄어쓰기 4칸
+ hibernate: #띄어쓰기 6칸
+# show_sql: true #띄어쓰기 8칸
+ format_sql: true #띄어쓰기 8칸
+logging.level: #띄어쓰기 없음
+ org.hibernate.SQL: debug #띄어쓰기 2칸
+# org.hibernate.type: trace #띄어쓰기 2칸
+```
+spring.jpa.hibernate.ddl-auto: create
+이 옵션은 애플리케이션 실행 시점에 테이블을 drop 하고, 다시 생성한다.
+참고: 모든 로그 출력은 가급적 로거를 통해 남겨야 한다.
+show_sql : 옵션은 System.out 에 하이버네이트 실행 SQL을 남긴다.
+org.hibernate.SQL : 옵션은 logger를 통해 하이버네이트 실행 SQL을 남긴다
+
+## jpa가 동작하는지 확인
+main에 Member클래스 만들고 엔티티생성
+```
+@Entity
+@Getter @Setter
+public class Member {
+    @Id @GeneratedValue //@GeneratedValue이란 자동으로 id값이 올라가는것
+    private Long id;
+    private String username;
+}
+```
+main에 Member엔티티를 찾을수있는 repository생성
+```
+
+@Repository
+public class MemberRepository {
+    @PersistenceContext
+    EntityManager em;
+    public Long save(Member member) {
+        em.persist(member);
+        return member.getId();
+    }
+    public Member find(Long id) {
+        return em.find(Member.class, id);
+    }
+}
+```
+
+```
+@RunWith(SpringRunner.class) //spring과 관련된거로 테스트한다 알리기
+@SpringBootTest
+public class MemberRepositoryTest {
+    @Autowired MemberRepository memberRepository;
+    @Test
+    @Transactional
+    @Rollback(false) // DB데이터가 초기화되지 않음
+    public void testMember() { //테스트 임의함수만들고
+        Member member = new Member(); //member객체 생성
+        member.setUsername("memberA"); //memberA라는 member생성
+        Long savedId = memberRepository.save(member); //saveID라는 변수에 저장
+        Member findMember = memberRepository.find(savedId); //findemember라는 변수에 저장
+        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
+
+        Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername())
+        ;
+        Assertions.assertThat(findMember).isEqualTo(member); //JPA 엔티티 동일성 보장 findMember(저장한것)member(조회한것)같은지 확인 결과는 true 같은 트렌젝션 안에서 저장을하고 조회를하면 영속성컨텍스트가 똑같음
+    }
+}
+```
+
+
