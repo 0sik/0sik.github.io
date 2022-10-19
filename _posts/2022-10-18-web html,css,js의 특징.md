@@ -99,6 +99,7 @@
 ### 아이디 셀렉터
 - 아이디 속성 사용
 - 아이디가 선택자로 올때는 HTML에서 지정한 아이디 앞에 #을 붙여 정의
+
 ```
 /* css*/
 #id_name {color:blue;}
@@ -126,3 +127,42 @@ p.title{color:red;}
 <h2 class = "title">
 <p class = "title">
 ```
+
+# 자바스크립트
+- 정적인 HTML 콘텐츠에서 사용자와 상호작용하며 동적으로 변경하는 부분 담당
+- 객체기반의 스크립트 언어로 기본적으로느 웹 브라우저에서 해석되는 인터프리터 언어
+- 이를 통해 DOM(Document Object Model)을 다룰 수 있음
+- 객체를 정의하는 JSON(JavaScript Object Notation)구문
+
+## 자바스크립트에서 이벤트를 처리하는 방법
+- HTML 태그에 이벤트 처리 속성 이용
+- 문서 객체 모델DOM요소에 속성 추가
+- DOM요소에 addEventListener()로 콜백 함수 등록
+```
+<button type="button" onClick(//마우스 버튼 클릭을 감지하고 login()함수 호출)="login()">로그인</button>
+<div onMouseOver(마우스가 태그 영역 위로 올라가는 것을 감지하고 show()함수 호출)="show()">마우스가 올라가면 텍스트가 보입니다</div>
+```
+## 문서 객체 모델(DOM)
+- DOM은 텍스트로 된 HTML문서를 프로그램적으로 처리할 수 있도록 문서 구조 전체를 객체화 한것
+- querySelector():선택자와 일치하는 첫번째 노드만 가지고옴 ex) document.querySelecor("p.title");
+- querySelectorAll():선택자와 일치하는 모든 노드를 가지고옴 ex) document.querySelectorAll("p.title");
+- get Attribute(),setAttribute():가져온 요소의 속성에 접근 ex) element.setAttrivute(attribute,value),element.getAttrivute(attribute,value)
+> 스타일 속성 변경
+>
+> - 특정 태그 요소의 스타일 속성을직접 변경
+> 
+> - ```document.getElementById("box1).setAttribute("style,"background-color:yellow");```
+>
+> 스타일 객체 변경
+> 
+> - 스타일 속성 변경과 동일한 방식이지만 코드 구현에서 차이가 있음
+> 
+> - 태그의 속성을 문자열 형태로 지정하는 것이 아닌 객체 참조 방식으로 스타일 속성 지정s
+> 
+> - ```document.getElementById("box1").style.backgroundColor="yello";```
+> 
+> 클래스 변경
+> 
+> - 태그 노드의 스타일 속성이 아니라 클래스 변경을 통해 디자인을 변경하는 형식
+> 
+> - ```document.getElementById("box1").className="bgyellow";```
