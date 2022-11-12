@@ -1,3 +1,14 @@
+---
+layout: single
+title: "web html,css,js의 특징"
+toc: true
+toc_sticky: true
+toc_label: "목차"
+categories: Web
+excerpt: "web html,css,js의 특징"
+tag: [Web]
+---
+
 📘웹서비스프로그래밍
 
 # HTML
