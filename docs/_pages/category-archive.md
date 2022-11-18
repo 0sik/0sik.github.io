@@ -4,9 +4,3 @@ layout: categories
 permalink: /categories/
 author_profile: true
 ---
----
-title: "Post by Tags"
-layout: tags
-permalink: /tags/
-author_profile: true
----
