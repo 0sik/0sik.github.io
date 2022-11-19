@@ -147,7 +147,7 @@ fr: &DEFAULT_FR
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Posts récents"
-  undefined_wpm              : "Le paramètre words_per_minute n"est pas défini dans _config.yml"
+  undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
   comment_form_info          : "Votre adresse email ne sera pas visible. Les champs obligatoires sont marqués"
   comment_form_comment_label : "Commentaire"
   comment_form_md_info       : "Markdown est supporté."
@@ -363,7 +363,7 @@ it: &DEFAULT_IT
   comment_btn_submit         : "Invia commento"
   comment_btn_submitted      : "Inviato"
   comment_success_msg        : "Grazie per il tuo commento! Verrà visualizzato nel sito una volta che sarà approvato."
-  comment_error_msg          : "C"è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
+  comment_error_msg          : "C'è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
   loading_label              : "Caricamento..."
   search_label_text          :
   search_placeholder_text    : "Inserisci termini di ricerca..."
@@ -1342,7 +1342,7 @@ pa: &DEFAULT_PA
   breadcrumb_separator       : "/"
   menu_label                 : "ਟੌਗਲ ਮੀਨੂ"
   search_label               : "ਖੋਜ"
-  toc_label                  : "ਇਸ ਸਫ਼ੇ "ਤੇ"
+  toc_label                  : "ਇਸ ਸਫ਼ੇ 'ਤੇ"
   ext_link_label             : "ਸਿੱਧਾ ਸੰਪਰਕ"
   less_than                  : "ਤੋਂ ਘੱਟ"
   minute_read                : "ਮਿੰਟ ਵਿੱਚ ਪੜਿਆ ਜਾ ਸਕਦਾ ਹੈ"
@@ -1370,14 +1370,14 @@ pa: &DEFAULT_PA
   comment_form_website_label : "ਵੈਬਸਾਈਟ (ਵਿਕਲਪਿਕ)"
   comment_btn_submit         : "ਕੋਈ ਟਿੱਪਣੀ ਭੇਜੋ"
   comment_btn_submitted      : "ਪੇਸ਼ ਕੀਤਾ"
-  comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ "ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
+  comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
   search_label_text          : "ਖੋਜ"
   search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   search_algolia_no_results  :
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
-  back_to_top                : "ਵਾਪਸ ਚੋਟੀ "ਤੇ ਜਾਓ"
+  back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
   <<: *DEFAULT_PA
 
