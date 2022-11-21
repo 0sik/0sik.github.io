@@ -1,12 +1,36 @@
-# main links
-main:
-  #- title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+docs:
+  - title: Programming
+    children:
+      - title: "Python"
+        url: python/
+        category: "python"
+      - title: "Flask"
+        url: flask/
+        category: "flask"
+      - title: "Java"
+        url: java/
+        category: "java"
+      - title: "Spring"
+        url: spring/
+        category: "spring"
+  - title: Server
+    children:
+      - title: "Aws"
+        url: aws/
+        category: "aws"
+  - title: Cs
+    children:
+      - title: "Web"
+        url: web/
+        category: "web"
+      - title: "Network"
+        url: network/
+        category: "network"
+  - title: Etc
+    children:
+      - title: "Postman"
+        url: postman/
+        category: "postman"
+      - title: "Jekyll"
+        url: jekyll/
+        category: "jekyll"
