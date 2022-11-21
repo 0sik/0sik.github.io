@@ -14,7 +14,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "python" %}
-                        <li><a href="/categories/python" class="">python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/python" class="">python/api사용 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -22,7 +22,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "flask" %}
-                        <li><a href="/categories/flask class="">flask ({{category[1].size}})</a></li>
+                        <li><a href="/categories/flask" class="">flask ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
