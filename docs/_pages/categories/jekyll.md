@@ -1,4 +1,5 @@
 ---
+title
 layout: archive
 permalink: jekyll
 title: "Jekyll"
