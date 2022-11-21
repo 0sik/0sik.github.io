@@ -1,7 +1,7 @@
 ---
-title: "C++ 프로그래밍"
+title: "java"
 layout: archive
-permalink: categories/java
+permalink: /categories/java
 author_profile: true
 sidebar_main: true
 ---
