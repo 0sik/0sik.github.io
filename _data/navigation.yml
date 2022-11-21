@@ -11,6 +11,8 @@ main:
     #url: /tags/
     #- title: "Post by Year"
     #url: /year-archive/
+  - title : "Github"
+    url : https://github.com/0sik
 
 
     # 카테고리 추가시
