@@ -4,9 +4,9 @@ title: "병원 api 이용하여 데이터 받기"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: Phthon
-excerpt: "병원 api 이용하여 데이터 받기"
-tag: [Phthon]
+categories: phthon
+toc_icon: "bars"
+tags: [phthon]
 ---
 
 📘파이썬

@@ -4,9 +4,9 @@ title: "flask의 GET방식과 POST방식"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: Flask,Phthon
-excerpt: "flask의 GET방식과 POST방식"
-tag: [Flask,Phthon]
+categories: flask
+toc_icon: "bars"
+tags: [flask]
 ---
 
 

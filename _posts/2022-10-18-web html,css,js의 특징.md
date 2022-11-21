@@ -4,9 +4,9 @@ title: "web html,css,js의 특징"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: Web
-excerpt: "web html,css,js의 특징"
-tag: [Web]
+categories: web
+toc_icon: "bars"
+tags: [web]
 ---
 
 📘웹서비스프로그래밍

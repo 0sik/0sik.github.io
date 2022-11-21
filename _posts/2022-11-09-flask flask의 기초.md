@@ -4,9 +4,9 @@ title: "flask의 기초"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: Flask,Phthon
-excerpt: "flask의 기초"
-tag: [Flask,Phthon]
+categories: flask
+toc_icon: "bars"
+tags: [flask]
 ---
 
 📘 Flask
