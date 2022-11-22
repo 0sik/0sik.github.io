@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "aws 가상화와 EC2,ELB,EFS"
+title: "가상화와 EC2,ELB,EFS"
 toc: true
 toc_sticky: true
 toc_label: "목차"

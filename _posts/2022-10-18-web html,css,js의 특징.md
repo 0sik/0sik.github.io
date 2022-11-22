@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "web html,css,js의 특징"
+title: "html,css,js의 특징"
 toc: true
 toc_sticky: true
 toc_label: "목차"
