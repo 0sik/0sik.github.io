@@ -13,8 +13,15 @@
         <span class="nav__sub-title">📘PROGRAMMING</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "javascript" %}
+                        <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "python" %}
-                        <li><a href="/categories/python" class="">python/api사용 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/python" class="">Python/Api사용 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -22,7 +29,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "flask" %}
-                        <li><a href="/categories/flask" class="">flask ({{category[1].size}})</a></li>
+                        <li><a href="/categories/flask" class="">Flask ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -30,7 +37,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "java" %}
-                        <li><a href="/categories/java" class="">java ({{category[1].size}})</a></li>
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -38,7 +45,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "spring" %}
-                        <li><a href="/categories/spring" class="">spring ({{category[1].size}})</a></li>
+                        <li><a href="/categories/spring" class="">Spring ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -48,14 +55,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "aws" %}
-                        <li><a href="/categories/aws" class="">aws ({{category[1].size}})</a></li>
+                        <li><a href="/categories/aws" class="">Aws ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "server" %}
-                        <li><a href="/categories/server" class="">server ({{category[1].size}})</a></li>
+                        <li><a href="/categories/server" class="">Server ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -65,14 +72,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "network" %}
-                        <li><a href="/categories/network" class="">network ({{category[1].size}})</a></li>
+                        <li><a href="/categories/network" class="">Network ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "web" %}
-                        <li><a href="/categories/web" class="">web ({{category[1].size}})</a></li>
+                        <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -82,7 +89,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "postman" %}
-                        <li><a href="/categories/postman" class="">postman ({{category[1].size}})</a></li>
+                        <li><a href="/categories/postman" class="">Postman ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
