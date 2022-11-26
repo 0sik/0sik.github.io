@@ -84,5 +84,28 @@ const add = (num1,num2)=>(
   num1+num2 //한줄일 경우에 이렇게 쓸수있음
 );
 ```
+# 배열
+ - 배열은 문자 뿐만 아니라, 숫자, 객체,함수 등도 포함할 수 있음
+ - length : 배열의 길이
+ - push() : 배열 끝에 추가
+ - pop() : 배열 끝에 요소 제거
+ - shift , unshift : 배열 앞에 제거/추가
 
-# 객체
+``` 
+let student = ['철수','영희','영수']
+console.log(student[0]);//철수
+console.log(student[1]);//영희
+console.log(student[2]);//영수
+console.log(student.length);//3
+student.unshift('영식','영지'); // ['영식','영지',
+'철수','영희','영수']
+student.shift(); // ['철수','영희','영수'] 
+```
+
+## 배열 for
+1. for
+  - for(let index = 0 ; index < student.length; index++){
+    console.log(student[index]);}
+2. for .. of
+  - for (let std of student){
+    console.log(std);}
