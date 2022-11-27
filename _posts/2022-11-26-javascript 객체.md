@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바 스크립트 기초 문법"
+title: "자바 스크립트 객체"
 toc: true
 toc_sticky: true
 toc_label: "목차"
