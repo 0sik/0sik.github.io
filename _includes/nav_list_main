@@ -20,6 +20,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "typescript" %}
+                        <li><a href="/categories/typescript" class="">TypeScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "python" %}
                         <li><a href="/categories/python" class="">Python/Api사용 ({{category[1].size}})</a></li>
                     {% endif %}
