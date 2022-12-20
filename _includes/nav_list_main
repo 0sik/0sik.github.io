@@ -13,6 +13,13 @@
         <span class="nav__sub-title">📘PROGRAMMING</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "nodejs" %}
+                        <li><a href="/categories/nodejs" class="">NodeJs ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "javascript" %}
                         <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
