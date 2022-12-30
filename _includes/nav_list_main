@@ -80,6 +80,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "docker" %}
+                        <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
       <li>
         <span class="nav__sub-title">📚ComputerScience</span>
@@ -100,6 +107,13 @@
       </li>
  <li>
         <span class="nav__sub-title">ETC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "github" %}
+                        <li><a href="/categories/github" class="">Github ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "postman" %}
