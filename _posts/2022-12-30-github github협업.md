@@ -10,8 +10,10 @@ tags: [github]
 ---
 
 📘github
+
 <!-- 깃협업 forking 개념 https://gmlwjd9405.github.io/2017/10/28/how-to-collaborate-on-GitHub-2.html --> 
 <!-- 커밋 템플릿 만들기 https://kkangsg.tistory.com/95 -->
+
 # Forking Workflow
  - 모든 프로젝트 참여자가 개인적인 로컬 저장소와 공개된 자신의 원격저장소, 두개의 git저장소를 가지는 방식이다
  - Organization의 중앙 원격 저장소에서 folk해와 자신의 원격저장소에 저장하여 사용한다.

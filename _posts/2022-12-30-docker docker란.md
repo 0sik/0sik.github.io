@@ -4,9 +4,9 @@ title: "docker란무엇이며 쓰는법"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: github
+categories: docker
 toc_icon: "bars"
-tags: [github]
+tags: [docker]
 ---
 
 📘docker
