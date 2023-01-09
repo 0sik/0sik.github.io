@@ -4,7 +4,7 @@ title: "redis"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: github
+categories: redis
 toc_icon: "bars"
 tags: [redis]
 ---
@@ -24,7 +24,7 @@ Key, Value구조의 비정형 데이터를 저장하고 관리하기 위한 오�
     서비스의 속도도 느려지지 않는 장점이 있습니다.
 
 ## redis의 특징 
-1. 데이터를 디스크에 쓰는 구조가 아니라 메모리에서 데이터를 처리하기 때문에 속도가 빠릅니다
+1. 데이터를 디스크에 쓰는 구조가 아니라 메모리에서 데이터를 처리하기 때:문에 속도가 빠릅니다
 2. Single Threaded이다
    - 한 번에 하나의 명령만 처리할 수 있습니다. 그렇게 때문에 중간에 처리 시간이 긴 명렁어가 들어오면 그 뒤에 명령어은 모두 앞에 있는 명렁어가 처리될 때 까지
      대기가 필요합니다.
