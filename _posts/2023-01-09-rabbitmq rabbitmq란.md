@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "rabbitmq"
+title: "rabbitmq란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -21,7 +21,7 @@ Kafka, ActiveMQ, OpenMessage Queue, RabbitMQ, Redis등이 여기에 해당된다
 1. rabbitmq
 2. kafka
 3. Redis
-4. Celery
+
 
 # Rabbitmq가 하는일
 1. MOM (Message Oriented Middleware): 메시지 미들웨어의 이론, 개념, 설계도를 의미

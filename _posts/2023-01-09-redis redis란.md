@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "redis"
+title: "redis란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -35,3 +35,17 @@ Key, Value구조의 비정형 데이터를 저장하고 관리하기 위한 오�
 1. 인메모리 데이터베이스
 2. 캐시
 3. 메세지 브로커
+
+## 도커에서 redis cli환경
+도커에서 터미널을 이용해 redis cli환경으로 이동하는 함수 
+> redis-cli
+
+cli환경으로 이동
+
+> Keys * 
+
+저장된 키값들이 나옴
+
+> get<Key>
+
+해당 키 값안 데이터 보기
