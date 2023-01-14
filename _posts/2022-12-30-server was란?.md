@@ -9,6 +9,8 @@ toc_icon: "bars"
 tags: [server]
 ---
 
+📘WAS
+
 
 # was 란
 DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server
@@ -22,7 +24,7 @@ DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제�
 
 ## was방식
 
-요청 -> 웹서버) -> 웹 어플리케이션 서버(톰캣, JBoss 등) -> (웹어플리케이션 서버가 실행)프로그램
+요청 -> 웹서버) -> 웹 어플리케이션 서버(flask,django 등) -> (웹어플리케이션 서버가 실행)프로그램
 
 ## Apache project의 Tomcat.
 
