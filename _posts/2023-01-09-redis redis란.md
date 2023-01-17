@@ -4,9 +4,9 @@ title: "redis란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: redis
+categories: database
 toc_icon: "bars"
-tags: [redis]
+tags: [database]
 ---
 
 📘redis
@@ -34,7 +34,7 @@ Key, Value구조의 비정형 데이터를 저장하고 관리하기 위한 오�
 ## redis의 쓰임
 1. 인메모리 데이터베이스
 2. 캐시
-3. 메세지 브로커
+3. 메세지 브로커(성능이좋지않음)
 
 ## 도커에서 redis cli환경
 도커에서 터미널을 이용해 redis cli환경으로 이동하는 함수 

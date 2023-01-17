@@ -66,6 +66,13 @@
       </li>
       <li>
         <span class="nav__sub-title">‍💻BACKEND</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "database" %}
+                    <li><a href="/categories/database" class="">Database ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "aws" %}
@@ -84,13 +91,6 @@
                 {% for category in site.categories %}
                     {% if category[0] == "docker" %}
                         <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "redis" %}
-                        <li><a href="/categories/redis" class="">Redis ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -132,6 +132,20 @@
                 {% for category in site.categories %}
                     {% if category[0] == "github" %}
                         <li><a href="/categories/github" class="">Github ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "monitoring" %}
+                        <li><a href="/categories/monitoring" class="">Monitoring ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "log" %}
+                        <li><a href="/categories/log" class="">Log ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

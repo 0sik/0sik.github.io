@@ -37,9 +37,9 @@ nginx가 https를 쓰면 ssl로 인해 쉽게 쓸수있음
 한 대의 서버로 부하가 집중되지 않도록 트래픽을 관리해 각각의 서버가 최적의 퍼포먼스를 보일 수 있도록 하는 것이 목적이다.
 
 ## ws 의 종류
-1. nginx
-2. Apache HTTP Server
-3. Internet Information Services
+1. Nginx
+2. Tomcat
+3. Caddy
 
 ## WAS만쓰지 않고 별도로 WS를 쓰는이유
 WAS의 부담을 줄여주기 위하여

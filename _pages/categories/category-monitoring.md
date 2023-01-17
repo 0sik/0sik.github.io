@@ -1,0 +1,11 @@
+---
+title: "monitoring"
+layout: archive
+permalink: /categories/monitoring
+author_profile: true
+sidebar_main: true
+---
+
+
+{% assign posts = site.categories.monitoring %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
