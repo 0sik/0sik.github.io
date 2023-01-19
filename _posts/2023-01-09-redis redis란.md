@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "redis란?"
+title: "인메모리 데이터베이스 REDIS"
 toc: true
 toc_sticky: true
 toc_label: "목차"
