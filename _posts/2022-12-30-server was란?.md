@@ -12,7 +12,7 @@ tags: [server]
 📘WAS
 
 
-# was 란
+# was 란 (web application server)
 DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server
 
 ## was가 필요한 이유
