@@ -25,7 +25,9 @@ tags: [monitoring]
 4. 서버 지연 시간을 모아둠(시장의 표준)
 
 > QPS : Quries-per-second : 초당 처리 할 수 있는 쿼리 수
+
 > UPS : User-per-second
+
 > SLO : Service Level Objective -> 사용자의 최대 로딩 시간 규정
 
 ## node exporter
