@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "githubaction이란"
+title: "CICD란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: CICD
+categories: cicd
 toc_icon: "bars"
-tags: [CICD]
+tags: [cicd]
 ---
 
-📘githubaction
+📘CICD(github action)
 
 # CICD 파이프라인
 
