@@ -1,4 +1,4 @@
-    ---
+---
 layout: single
 title: "WEB에 대한 전반적 이해?"
 toc: true
