@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Rest Api란, api이용해 자기자신에게 카톡보내기"
+title: "Rest Api란, open api이용해 자기자신에게 카톡보내기"
 toc: true
 toc_sticky: true
 toc_label: "목차"

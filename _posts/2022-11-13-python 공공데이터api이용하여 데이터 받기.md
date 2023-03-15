@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "병원 api 이용하여 데이터 받기"
+title: "병원 open api 이용하여 데이터 받기"
 toc: true
 toc_sticky: true
 toc_label: "목차"
