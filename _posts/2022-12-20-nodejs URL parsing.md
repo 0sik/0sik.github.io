@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "URL parsing"
+title: "nodejs의 URL parsing"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -11,7 +11,7 @@ tags: [nodejs]
 
 📘nodejs
 
-# URL parsing
+# nodejs의 URL parsing
 먼저 화면 이동은 기본적으로 a태그 씀
 ``` <a href=/?id=1></a> ```
 먼저 url 모듈을 import 해줘야한다
