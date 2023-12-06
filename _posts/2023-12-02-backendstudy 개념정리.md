@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "backend memo"
+title: "message 큐,nosql,rdbms,django,flask,spring,springbbot"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -52,6 +52,17 @@ NoSQL에서는 스키마가 없기 때문에 유연하며 자유로운 데이터
 단점
 데이터 중복이 발생할 수 있으며 중복된 데이터가 변경 될 경우 수정을 모든 컬렉션에서 수행을 해야 합니다.
 스키마가 존재하지 않기에 명확한 데이터 구조를 보장하지 않으며 데이터 구조 결정가 어려울 수 있습니다.
+
+## nosql의 종류
+1. key-value
+- 키와 값으로 이루어진, 저장과 조회라는 가장 간단한 원칙에 충실한 데이터베이스.
+- 기본적인 패턴으로 Key,value가 하나의 묶음으로 저장되는 구조로 단순한 구조이기에 속도가 빠르며 분산 저장 시 용이
+- Redis
+
+2. Document
+- XML, JSON, BSON - 계층적 트리 데이터 방식으로 저장
+- key-value Type과의 차이는 Database에 값을 문서로 저장한다는 점
+- MongoDB
 
 # spring과 spring boot의 차이점
 프링(Spring)은 프레임워크이며, 스프링 부트(Spring Boot)는 스프링 프레임워크를 기반으로 한 도구입니다. 스프링은 설정 파일을 작성해야 하지만, 스프링 부트는 자동 설정을 제공하여 간편하게 개발할 수 있습니다. 또한, 스프링 부트는 내장 서버를 제공하여 쉽게 웹 애플리케이션을 실행할 수 있습니다. Spring은 스프링 프레임워크를 보다 세밀하게 제어하고자 하는 경우에, Spring Boot는 빠르고 간단하게 스프링 애플리케이션을 개발하고자 하는 경우에 사용됩니다.
