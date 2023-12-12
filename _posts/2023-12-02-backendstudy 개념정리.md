@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "message 큐,nosql,rdbms,django,flask,spring,springboot"
+title: "message큐,nosql,rdbms,django,flask,spring,springboot"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -8,7 +8,7 @@ categories: backendstudy
 toc_icon: "bars"
 tags: [backendstudy]
 ---
-📘 message 큐,nosql,rdbms,django,flask,spring,springboot
+📘 message 큐,nosql,rdbms,django,flask,sprinsg,springboot
 
 # massage 큐에 대해 설명
 서비스들 간에 데이터를 주고 받는 방법중에 하나 
