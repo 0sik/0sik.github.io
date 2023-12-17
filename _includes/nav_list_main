@@ -93,8 +93,8 @@
         </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "aws" %}
-                        <li><a href="/categories/aws" class="">Aws ({{category[1].size}})</a></li>
+                    {% if category[0] == "devOps" %}
+                        <li><a href="/categories/devOps" class="">DevOps ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
