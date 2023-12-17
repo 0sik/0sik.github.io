@@ -4,9 +4,9 @@ title: "정규화"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: database
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [database]
 ---
 📘 정규화
 

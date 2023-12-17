@@ -4,9 +4,9 @@ title: "Microsoft Azure"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: devOps
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [devOps]
 ---
 📘 Microsoft Azure
 
