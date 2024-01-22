@@ -70,6 +70,29 @@ int main()
 분기 예측(영어: branch prediction)은 다음 실행될 조건문이 어떤 곳으로 분기할 것인지를 확실히 알게 되기 전에 
 미리 추측하는 CPU 기술이다. (출저 위키피디아)
 
+## Static Branch Prediction(정적분기예측)
+
+정적 분기 예측은 컴파일러의 도움으로 분기 여부를 예측하는 기법으로 분기가 발생하지 않는다(분기가 실패한다)고 가정하는 발생 예측 기법과 분기가 발생한다(분기가 성공한다)고 가정한는 발생 얘측기법이 있다.
+1. 분기가 실패할 것으로 예측 (predict the branch as not taken)
+    - 분기가 일어나지 않을 것으로 예측하고 실행
+    - 분기 주소는 “ID” 단계에서 미리 계산 -> ID : Instruction Decoding 단계
+    - 만약 분기가 일어나면, 파이프라인을 멈춘 뒤 분기 주소로 이동
+2. 분기가 성공할 것으로 예측 (predict the branch as taken)
+    - 분기 주소는 “ID” 단계에서 미리 계산
+    - 예상 페널티: 1 사이클 (실제로 분기 안 함), 1 사이클 (실제로 분기) -> 장점이자 단점임. 무조건 1사이클
+
+## Dynamic Branch Prediction(동적분기예측)
+conditional branch의 과거를 기반으로 예측을 수행한다.
+하드웨어에서 각 branch마다 과거를 기억하고 있어서, 해당 branch의 트렌드로 예측을 한다.
+두가지 종류가 있는데, 1-bit predictior와 2-bit predictor가 있다.
+1-bit predictor는 branch가 Taken이 된다면 bit를 0으로 바꿈으로써 다음 branch도 taken 될 것이라 판단하고, branch가 not taken이 된다면 bit를 1로 바꾸고, 다음 branch는 taken 되지 않을 것이라 판단한다.
+default는 1이다.
+
+2-bit predictor은 대략 두번의 예측이 틀렸을때, 비로소 예측이 바뀐다
+strongly taken, weakly taken,strongly not taken, weakly not taken이 있다.
+default는 weakly not taken이다.
+
+
 # 이유
 CPU가 연산을 수행하면서 분기를 만나게 된다면 조건 값의 계산이 끝날때 까지 기다려야한다. 그만큼의 지연이 발생한다.
 그렇기 때문에 cpu는 미리 조건의 값을 추론하여 미리 명령을 실행시켜놓고 기다린다.
@@ -77,6 +100,9 @@ CPU가 연산을 수행하면서 분기를 만나게 된다면 조건 값의 계
 
 정렬된 경우 앞에 부분은 포함이 안될거고 뒤에 부분이 계속 포함이 될거니까 계속 적중하여 지연이 없이 수행될거고
 정렬되지 않을 경우 분기예측이 틀려 다시 처음부터 연산이 수행되어 시간이 지연될 것이다. 
+
+
+- 저 상황에서 소트를 하는것은 두배이상의 빠른 효과를 가지고 옵니다. 왜냐하면 cpu상 dynamic Branch Prediction을 사용하게 되면 128이전에는 F였다 그 이후 전부 T라는 결과가 일어나 miss가 고작 한번만 일어나기 때문에 파이프라이닝을 ....
 
 # 확장
 이 문제를 찾아보다 확장된 이론을 적용한 블로그를 보았다.
