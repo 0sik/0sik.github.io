@@ -4,9 +4,9 @@ title: "Branch Prediction(분기예측)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: CA
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [CA]
 ---
 📘 Branch Prediction(분기예측)
 
