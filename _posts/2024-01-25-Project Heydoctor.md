@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "병원 예약, 챗봇 서비스(HeyDoctor)"
+title: "단일서버와 Docker Compose의 이점"
 toc: true
 toc_sticky: true
 toc_label: "목차"

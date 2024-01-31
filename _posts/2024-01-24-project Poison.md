@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "독초 판별 서비스(POISON)"
+title: "서버를 두개를 두는 이유"
 toc: true
 toc_sticky: true
 toc_label: "목차"
