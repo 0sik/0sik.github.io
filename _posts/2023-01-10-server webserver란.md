@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "web server란?"
+title: "web server란"
 toc: true
 toc_sticky: true
 toc_label: "목차"

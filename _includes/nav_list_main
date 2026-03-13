@@ -146,7 +146,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "CA" %}
-                        <li><a href="/categories/CA" class="">CA ({{category[1].size}})</a></li>
+                        <li><a href="/categories/CA" class="">Computer Architecture ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

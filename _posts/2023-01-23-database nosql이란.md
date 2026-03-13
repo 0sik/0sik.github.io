@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "nosql이란?"
+title: "nosql이란"
 toc: true
 toc_sticky: true
 toc_label: "목차"

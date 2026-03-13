@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "celery란?"
+title: "celery란"
 toc: true
 toc_sticky: true
 toc_label: "목차"
