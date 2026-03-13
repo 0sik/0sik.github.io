@@ -4,9 +4,9 @@ title: "Spring Security 이해"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: spring
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [spring]
 ---
 
 📘 Spring Security 이해 ( Spring Security를 사용한 인증 인가와 그렇지 않은 인증 인가 구현에 대한 차이 이해하기 )
