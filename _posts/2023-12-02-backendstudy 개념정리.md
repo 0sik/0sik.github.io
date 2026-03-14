@@ -4,9 +4,9 @@ title: "message큐,nosql,rdbms,django,flask,spring,springboot"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: spring
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [spring]
 ---
 📘 message 큐,nosql,rdbms,django,flask,sprinsg,springboot
 

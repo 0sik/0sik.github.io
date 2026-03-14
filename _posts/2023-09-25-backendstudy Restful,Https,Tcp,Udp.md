@@ -4,9 +4,9 @@ title: "RESTful, HTTPS, TCP,UDP"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: network
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [network]
 ---
 
 📘 RESTful, HTTPS, TCP,UDP
