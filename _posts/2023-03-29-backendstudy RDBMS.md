@@ -4,9 +4,9 @@ title: "RDBMS"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: backendstudy
+categories: spring
 toc_icon: "bars"
-tags: [backendstudy]
+tags: [spring]
 ---
 
 📘Spring Data JPA vs MyBatis
