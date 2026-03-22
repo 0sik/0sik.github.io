@@ -4,9 +4,9 @@ title: "서버를 두개를 두는 이유"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: poison
 toc_icon: "bars"
-tags: [project]
+tags: [poison]
 ---
 📘 독초 판별 서비스(POISON)
 

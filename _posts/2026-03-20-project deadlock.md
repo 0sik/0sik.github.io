@@ -4,9 +4,9 @@ title: "운영 중 반복되던 데드락, 쿼리보다 수정 경로를 먼저 
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: syncmon
 toc_icon: "bars"
-tags: [project]
+tags: [syncmon]
 ---
 📘 SyncMon
 

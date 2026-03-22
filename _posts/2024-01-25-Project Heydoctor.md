@@ -4,9 +4,9 @@ title: "Docker Compose의 이점과 SSL"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: heydoctor
 toc_icon: "bars"
-tags: [project]
+tags: [heydoctor]
 ---
 📘 병원 예약, 챗봇 서비스(HeyDoctor)
 

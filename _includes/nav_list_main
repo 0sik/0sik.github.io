@@ -9,6 +9,51 @@
       <li>
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
       </li>
+            <li>
+              <span class="nav__sub-title">🌱Project</span>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "syncmon" %}
+                              <li><a href="/categories/syncmon" class="">SyncMon ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "syncchecker" %}
+                              <li><a href="/categories/syncchecker" class="">SyncChecker ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "oea" %}
+                              <li><a href="/categories/oea" class="">OEA ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "wannafly" %}
+                              <li><a href="/categories/wannafly" class="">WannaFly ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "poision" %}
+                              <li><a href="/categories/poision" class="">Poison ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+                  <ul>
+                      {% for category in site.categories %}
+                          {% if category[0] == "heydoctor" %}
+                              <li><a href="/categories/heydoctor" class="">HeyDoctor ({{category[1].size}})</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  </ul>
+            </li>
       <li>
         <span class="nav__sub-title">📘PROGRAMMING</span>
             <ul>
@@ -178,13 +223,6 @@
                 {% for category in site.categories %}
                     {% if category[0] == "postman" %}
                         <li><a href="/categories/postman" class="">Postman ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "project" %}
-                        <li><a href="/categories/project" class="">Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

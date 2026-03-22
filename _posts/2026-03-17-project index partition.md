@@ -4,9 +4,9 @@ title: "5억 건 이상의 데이터에서 1건을 빠르게 조회하기 위한
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: syncmon
 toc_icon: "bars"
-tags: [project]
+tags: [syncmon]
 ---
 📘 SyncMon
 

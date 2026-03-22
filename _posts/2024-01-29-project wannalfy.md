@@ -4,9 +4,9 @@ title: "Lambda와 Access Token,Refresh Token의 이점"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: wannafly
 toc_icon: "bars"
-tags: [project]
+tags: [wannafly]
 ---
 📘 워너플라이 (WANNAFLY)
 

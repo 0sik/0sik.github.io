@@ -4,9 +4,9 @@ title: "모니터링 에이전트의 CPU 사용량을 낮춘 방법"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: project
+categories: syncmon
 toc_icon: "bars"
-tags: [project]
+tags: [syncmon]
 ---
 📘 SyncMon
 
