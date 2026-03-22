@@ -41,8 +41,8 @@
                   </ul>
                   <ul>
                       {% for category in site.categories %}
-                          {% if category[0] == "poision" %}
-                              <li><a href="/categories/poision" class="">Poison ({{category[1].size}})</a></li>
+                          {% if category[0] == "poison" %}
+                              <li><a href="/categories/poison" class="">Poison ({{category[1].size}})</a></li>
                           {% endif %}
                       {% endfor %}
                   </ul>
